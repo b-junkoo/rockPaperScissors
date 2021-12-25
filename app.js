@@ -12,12 +12,12 @@ function game(e) {
     if ((playerVal - compVal) == 4) {
         results.textContent = `You win, ${playerChoice} beats ${compChoice}`;
         playerScore+=1;
-        scores.textContent = `Your score: ${playerScore}, computer score: ${compScore}`
+        scores.textContent = `Your score: ${playerScore}, Gnome score: ${compScore}`
 
     } else if ((compVal - playerVal) == 4) {
         results.textContent = `You lose ${compChoice} beats ${playerChoice}`;
         compScore+=1;
-        scores.textContent = `Your score: ${playerScore}, computer score: ${compScore}`
+        scores.textContent = `Your score: ${playerScore}, Gnome score: ${compScore}`
 
     } else if (compVal == playerVal) {
         results.textContent = "Tie!";
@@ -25,11 +25,11 @@ function game(e) {
     } else if (compVal > playerVal) {
         results.textContent = `You lose ${compChoice} beats ${playerChoice}`;
         compScore+=1;
-        scores.textContent = `Your score: ${playerScore}, computer score: ${compScore}`
+        scores.textContent = `Your score: ${playerScore}, Gnome score: ${compScore}`
     } else {
         results.textContent = `You win, ${playerChoice} beats ${compChoice}`;
         playerScore+=1;
-        scores.textContent = `Your score: ${playerScore}, computer score: ${compScore}`
+        scores.textContent = `Your score: ${playerScore}, Gnome score: ${compScore}`
     }
 }
 

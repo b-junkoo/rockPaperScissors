@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>RockPaperScissors</title>
     <script src="app.js" defer></script>
-    <button id='rock'> Rock </button>
-    <button id='paper'> Paper </button>
-    <button id='scissors'> Scissor </button>
+    <link rel='stylesheet' href="style.css">
+</head>
 
-    <div id='results'>Results</div>
+<body>
+    <div class="gnome">
+        <h1>Defeat the Gnome!</h1>
+        <img src = "./images/gnome.png">
+    </div>
 
-    <div id='scores'>Scores</div>
+    <div class = "choices">
+        <button class = choice id='rock'> Rock </button>
+        <button class = choice id='paper'> Paper </button>
+        <button class = choice id='scissors'> Scissor </button>
+    </div>
 
+    <div class = "info">
+        <div id='results'>Results</div>
+        <div id='scores'>Scores</div>
+    </div>
 </body>
+
 </html>
